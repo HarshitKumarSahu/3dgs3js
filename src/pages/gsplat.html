@@ -16,6 +16,7 @@
                 <a href="./explore.html">Explore</a>
             </div>
         </nav>
+        
         <div id="progress-container">
             <dialog open id="progress-dialog">
                 <p>
@@ -24,11 +25,23 @@
                 <progress max="100" id="progress-indicator"></progress>
             </dialog>
         </div>
+        
         <canvas id="gsplat-canvas"></canvas>
 
         <!-- option around 5 -->
+        <div id="splat-options">
+            <ul>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat">Splat 1: Kotawani</li>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.splat">Splat 2: kameshsir</li>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat">Splat 3: neemasir</li>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.splat">Splat 4: shubhimaam</li>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.splat">Splat 5: statue</li>
+                <li data-url="https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.splat">Splat 6: LCIT</li>
+            </ul>
+        </div>
     </div>
    
-    <script type="module" src="../demo.js"></script>
+    <!-- <script type="module" src="../demo.js"></script> -->
+    <script type="module" src="../gsplat.js"></script>
 </body>
 </html>

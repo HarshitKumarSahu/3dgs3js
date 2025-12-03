@@ -20,16 +20,154 @@
         </nav>
 
         <div class="home-page">
-            <h1>3D Gaussian Splatting</h1>
-            <!-- <img src="/image.png" alt=""> -->
+            <h1 class="left">
+                Gaussian 
+                <br>
+                Splatting
+            </h1>
+            <div class="right">
+                <!-- <p>The Future of Real-Time 3D Reality Capturing</p> -->
+                <p>A revolutionary way to capture and render real-world 3D scenes at hundreds of FPS using millions of tiny glowing 3D Gaussians instead of polygons or neural meshes.</p>
+                <p>
+                    <span>No meshes</span>
+                    <span>120+ FPS</span>
+                    <span>works on web</span>
+                </p>
+            </div>
         </div>
 
         <div class="what-page">
-            <h1>ok</h1>
+            <div class="left">
+                <!-- <h1>what is 3D Gaussian Splatting</h1> -->
+                <!-- <p>Gaussian Splatting is extended class of NeRF (Neural Radiance Field), or a rasterization technique that allows real-time rendering of photorealistic scenes learned from small samples of images. That means: Have data describing the scene. Draw the data on the screen.</p> -->
+                <p>
+                    Gaussian Splatting is the evolution of NeRF (Neural Radiance Field): same photorealistic quality from a few photos, but rendered in real-time by directly splatting millions of 3D Gaussians onto the screen. 
+                    <br> 
+                    <br>
+                    Each Gaussian has:
+                </p>
+                <div class="p-support">
+                    <span>A 3D position in space</span>
+                    <span>A size and shape</span>
+                    <span>A rotation or quaternion</span>
+                    <span>A color + view-dependent lighting</span>
+                    <span>An opacity (alpha) value</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="vid-cont">
+                    <video src="/homeSplat3.mp4" loop autoplay muted></video>
+                </div>
+                <p>Sample 3D Gaussian Splatting cloud formation</p>      
+            </div>
+        </div>
+
+        <div class="work-page">
+            <!-- <div class="fixed">
+                <span>W</span>
+                <span>O</span>
+                <span>R</span>
+                <span>K</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div> -->
+            <div class="first">
+                <div class="box">
+                    <div class="top">
+                        <span>1</span>
+                        <h1>
+                            Record
+                            <br>
+                            a short 
+                            <br>
+                            video
+                        </h1>
+                    </div>
+                    <p>Walk 360 around any object or place with your phone, drone, camera, anything that can record a video.</p>
+                </div>
+                <canvas id="camera"></canvas>
+            </div>
+            <div class="second">
+                <div class="box">
+                    <div class="top">
+                        <span>2</span>
+                        <h1>
+                            The video
+                            <br>  
+                            splitted into 
+                            <br>
+                            100+ of images
+                        </h1>
+                    </div>
+                    <p>Just like taking many pictures from every angle</p>
+                </div>
+                <div class="imgs-cont">
+                    <div class="img">
+                        <img src="/works/1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="/works/2.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="/works/3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="/works/4.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="/works/5.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="/works/6.jpg" alt="">
+                    </div>
+                </div>
+                <p class="center">some of sample images form hand model, its can be based upon fPS in a video</p>
+            </div> 
+            <div class="third">
+                <div class="box">
+                    <div class="top">
+                        <span>3</span>
+                        <h1>
+                            finds 3D 
+                            <br>
+                            camera positions 
+                            <br>
+                            in space
+                        </h1>
+                    </div>
+                    <p>The computer looks at all photos and figures out exactly where the camera was for each one</p>
+                </div>
+                <div class="imgs-cont">
+                    <div class="img">
+                        <img src="/works/camera.png" alt="">
+                    </div>
+                    <p class="center">sample image of hand model with camera array with there positions</p>
+                </div>
+                
+            </div>
+            <div class="fourth">
+                <div class="box">
+                    <div class="top">
+                        <span>4</span>
+                        <h1>
+                            3D glowing
+                            <br>
+                            Gaussians
+                            <br>
+                            formation
+                        </h1>
+                    </div>
+                    <p> Millions of tiny glowing 3D bubbles (Gaussians) are placed exactly where the real object was, They learn the perfect size, shape, color, and shininess from the photos.</p>
+                </div>
+                <canvas id="ellipes"></canvas>
+            </div>
         </div>
 
         <div data-color-type="2" class="gradient-canvas"></div>
     </div>
+
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../camera.js"></script>
 </body>
 </html>
