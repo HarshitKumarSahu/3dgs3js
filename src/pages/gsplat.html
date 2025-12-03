@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3dgs3js</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="gsplat">
+        <nav>
+            <!-- <a href="#">3DGS3JS</a> -->
+            <a href="">3D Gaussian Splatting</a>
+            <div class="nav-options">
+                <a href="../../index.html">home</a>    
+                <a href="./explore.html">Explore</a>
+            </div>
+        </nav>
+        <div id="progress-container">
+            <dialog open id="progress-dialog">
+                <p>
+                    <label for="progress-indicator">Loading scene...</label>
+                </p>
+                <progress max="100" id="progress-indicator"></progress>
+            </dialog>
+        </div>
+        <canvas id="gsplat-canvas"></canvas>
+
+        <!-- option around 5 -->
+    </div>
+   
+    <script type="module" src="../demo.js"></script>
+</body>
+</html>

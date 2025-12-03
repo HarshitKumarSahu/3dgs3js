@@ -55,14 +55,13 @@ img {
     top: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
     /* background-color: #000; */
 }
-
-
 nav {
     width: 100%;
-    z-index: 2;
-    position: absolute;
+    z-index: 999;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -75,6 +74,12 @@ nav a {
     font-size: calc(var(--oneBlock) * 0.45);
     text-transform: uppercase;
     font-family: anton;
+}
+nav .nav-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--oneBlock) * 0.45);
 }
 .control {
     width: 100%;
@@ -89,13 +94,17 @@ nav a {
     gap: calc(var(--oneBlock) * 1);
 }
 .control button {
+    /* width:  calc(var(--oneBlock) * 8); */
     font-size: calc(var(--oneBlock) * 1);
     font-family: anton;
-    color: #f8f8f8;
+    /* color: #f8f8f8; */
     /* background-color: #f8f8f848; */
     background-color: transparent;
     border: calc(var(--oneBlock) * 0.025) solid #f8f8f8;
     padding: calc(var(--oneBlock) * 0.25) calc(var(--oneBlock) * 2);
+}
+.control a {
+    color: #f8f8f8;
 }
 
 
@@ -106,13 +115,13 @@ nav a {
 
 
 
+#gsplat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 
-
-
-
-
-
-#canvas {
+#gsplat-canvas {
     width: 100%;
     height: 100%;
 }
@@ -153,6 +162,50 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #eee;
 }
+
+
+
+
+
+#explore {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#explore a {
+    color: #000;
+    /* mix-blend-mode:hue;  */
+}
+.home-page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background-color: orange; */
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: anton;
+    /* font-size: calc(var(--oneBlock) * 1.9778); */
+    font-size: calc(var(--oneBlock) * 1.95);
+    text-transform: uppercase;
+}
+.home-page h1 {
+    color: black;
+    position: absolute;
+    mix-blend-mode: difference;
+    top: 76.5%; 
+
+}
+.what-page {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
 
 /* Responsive Media Queries (Mobile-First) */
 /* Phone view: up to 576px */

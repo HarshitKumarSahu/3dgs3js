@@ -1,6 +1,6 @@
 import * as SPLAT from "gsplat";
 
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("gsplat-canvas");
 const progressDialog = document.getElementById("progress-dialog");
 const progressIndicator = document.getElementById("progress-indicator");
 

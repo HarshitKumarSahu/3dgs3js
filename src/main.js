@@ -1,39 +1,117 @@
 import * as THREE from "three";
 import { vertexShader, fluidShader, displayShader } from "./shader.js";
 
-const config = {
-    brushSize: 25.0,
-    brushStrength: 0.5,
-    distortionAmount: 2.5,
-    fluidDecay: 0.98,
-    trailLength: 0.8,
-    stopDecay: 0.85,
-    // color1: "#b8fff7",
-    // color2: "#6e3466",
-    // color3: "#0133ff",
-    // color4: "#66d1fe",
+let data = document.querySelector(".gradient-canvas")
+// console.log();
 
 
-    // color1: "#000000",
-    // color2:"#393939",
-    // color3: "#060606",
-    // color4: "#CDCDCD", 
+
+let config;
+if (data.dataset.colorType === "2" || data.dataset.colorType === 2) {
+    config = {
+        brushSize: 25.0,
+        brushStrength: 0.5,
+        distortionAmount: 2.5,
+        fluidDecay: 0.98,
+        trailLength: 0.8,
+        stopDecay: 0.85,
+        color1: "#9C9C9C",
+        color2:"#e2e2e2",
+        color3: "#d8d8d8",
+        color4: "#0D0D0D",
+        colorIntensity: 1.0,
+        softness: 1.0,
+    };
+} else {
+    config = {
+        brushSize: 25.0,
+        brushStrength: 0.5,
+        distortionAmount: 2.5,
+        fluidDecay: 0.98,
+        trailLength: 0.8,
+        stopDecay: 0.85,
+        color1: "#000000",
+        color2:"#393939",
+        color3: "#060606",
+        color4: "#5c5c5c",
+        colorIntensity: 1.0,
+        softness: 1.0,
+    };
+}
 
 
-    // color1: "#9C9C9C",
-    // color2:"#F2F2F2",
-    // color3: "#f8f8f8",
-    // color4: "#CDCDCD", 
+// if(data.dataset.colorType === 2) {
+//     const config = {
+//         brushSize: 25.0,
+//         brushStrength: 0.5,
+//         distortionAmount: 2.5,
+//         fluidDecay: 0.98,
+//         trailLength: 0.8,
+//         stopDecay: 0.85,
+//         // color1: "#b8fff7",
+//         // color2: "#6e3466",
+//         // color3: "#0133ff",
+//         // color4: "#66d1fe",
+    
+    
+//         color1: "#000000",
+//         color2:"#393939",
+//         color3: "#060606",
+//         color4: "#CDCDCD", 
+    
+    
+//         // color1: "#9C9C9C",
+//         // color2:"#F2F2F2",
+//         // color3: "#f8f8f8",
+//         // color4: "#CDCDCD", 
+    
+//         // color1: "#000000",
+//         // color2:"#393939",
+//         // color3: "#060606",
+//         // color4: "#5c5c5c", 
+    
+    
+//         colorIntensity: 1.0,
+//         softness: 1.0,
+//     };
+// } else {
+//     const config = {
+//         brushSize: 25.0,
+//         brushStrength: 0.5,
+//         distortionAmount: 2.5,
+//         fluidDecay: 0.98,
+//         trailLength: 0.8,
+//         stopDecay: 0.85,
+//         // color1: "#b8fff7",
+//         // color2: "#6e3466",
+//         // color3: "#0133ff",
+//         // color4: "#66d1fe",
+    
+    
+//         // color1: "#000000",
+//         // color2:"#393939",
+//         // color3: "#060606",
+//         // color4: "#CDCDCD", 
+    
+    
+//         // color1: "#9C9C9C",
+//         // color2:"#F2F2F2",
+//         // color3: "#f8f8f8",
+//         // color4: "#CDCDCD", 
+    
+//         color1: "#000000",
+//         color2:"#393939",
+//         color3: "#060606",
+//         color4: "#5c5c5c", 
+    
+    
+//         colorIntensity: 1.0,
+//         softness: 1.0,
+//     };
+// }
 
-    color1: "#000000",
-    color2:"#393939",
-    color3: "#060606",
-    color4: "#5c5c5c", 
 
 
-    colorIntensity: 1.0,
-    softness: 1.0,
-};
 
 function hexToRgb(hex) {
     const r = parseInt(hex.slice(1, 3), 16) / 255;
