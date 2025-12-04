@@ -53,25 +53,18 @@
                     <span>A color + view-dependent lighting</span>
                     <span>An opacity (alpha) value</span>
                 </div>
+                <h1 class="work-headding">How it form 3d scene from 360 video</h1>
             </div>
             <div class="right">
                 <div class="vid-cont">
-                    <video src="/homeSplat3.mp4" loop autoplay muted></video>
+                    <!-- <video src="/homeSplat3.mp4" loop autoplay muted></video> -->
+                    <video src="/difference/gsplatHand.mp4" loop autoplay muted></video>
                 </div>
                 <p>Sample 3D Gaussian Splatting cloud formation</p>      
             </div>
         </div>
 
         <div class="work-page">
-            <!-- <div class="fixed">
-                <span>W</span>
-                <span>O</span>
-                <span>R</span>
-                <span>K</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-            </div> -->
             <div class="first">
                 <div class="box">
                     <div class="top">
@@ -162,12 +155,212 @@
                 </div>
                 <canvas id="ellipes"></canvas>
             </div>
+            <div class="fifth">
+                <div class="box">
+                    <div class="top">
+                        <span>5</span>
+                        <h1>
+                            few time the
+                            <br>
+                            bubbles are 
+                            <br>
+                            perfectly tuned
+                        </h1>
+                    </div>
+                    <div class="bottom">
+                        <p>So as time passed, model constantly update Gaussians(positions, alpha, rotation, size), we see it forming clouds, at start it seems like points</p>
+                        <div class="gui">
+                            <label for="particleCount">Particles: <span id="count">10000</span></label>
+                            <input type="range" id="particleCount" min="100" max="20000" step="100" value="10000">
+                        </div>
+                    </div>
+                </div>
+                <canvas id="semi-hand"></canvas>
+            </div>
+            <div class="sixth">
+                <div class="box">
+                    <div class="top">
+                        <span>6</span>
+                        <h1>
+                            final 3d
+                            <br>
+                            Gaussian 
+                            <br>
+                            splatting
+                        </h1>
+                    </div>
+                    <p>You now have a tiny file (a few megabytes) that contains the full 3D scene made of smart glowing bubbles.</p>
+                </div>
+                <div class="hand-wrapper">
+                    <div id="progress-container">
+                        <dialog open id="progress-dialog">
+                            <p>
+                                <label for="progress-indicator">Loading scene...</label>
+                            </p>
+                            <progress max="100" id="progress-indicator"></progress>
+                        </dialog>
+                    </div>
+                    <canvas id="gsplat-hand"></canvas>
+                    <div class="control">
+                        <div class="move">
+                            <img src="/controls/2.png" alt="">
+                        </div>
+                        <div class="rotate">
+                            <img src="/controls/1.png" alt="">
+                        </div>
+                        <div class="exit">
+                            <img src="/controls/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="difference">
+            <h1>Why It Beats Everything Else</h1>
+            <div class="vidd">
+                <div class="left">
+                    <h1>meshes</h1>
+                    <div class="vid-cont">
+                        <video src="/difference/meshHand.mp4" muted loop autoplay></video>
+                    </div>
+                </div>
+                <div class="middle">
+                    <p>NeRF : slow, blurry, GBs</p>
+                    <p>Photogrammetry : heavy meshes </p>
+                    <p>Professional scan : 500+k Machines</p>
+                    <p>3DGS : fast, less complex, MBs</p>
+                </div>
+                <div class="right">
+                    <h1>Gaussians</h1>
+                    <div class="vid-cont">
+                        <video src="/difference/gsplatHand.mp4" muted loop autoplay></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="future">
+            <h1>The Future is Here</h1>
+            <div class="parent">
+                <div class="div1">
+                    <p>
+                        AR/VR glasses
+                    </p>
+                </div>
+                <div class="div2">
+                    <p>
+                        Meta Verse
+                    </p>
+                </div>
+                <div class="div3">
+                    <p>
+                        3D video calls
+                    </p>
+                </div>
+                <div class="div4">
+                    <p>
+                        Digital twins
+                    </p>
+                </div>
+                <div class="div5">
+                    <p>
+                        E-commerce
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="p-cont">
+                <p>
+                    AR/VR glasses
+                </p>
+                <p>
+                    Metaverse
+                </p>
+                <p>
+                    3D video calls
+                </p>
+                <p>
+                    Digital twins
+                </p>
+                <p>
+                    E-commerce
+                </p>
+            </div> -->
+        </div>
+
+        <div class="future-update">
+            <h1>Future updates: 4D Gaussian Splatting</h1>
+            <!-- <div class="ftu"> -->
+                <div class="top">
+                    <p>3D GS + Time = Millions of "deformable" Gaussians that move and change shape over time.</p>
+                    <div class="vid-cont2">
+                        <video src="/future/4dgsplat.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+                <!-- <div class="bottom">
+                    <h1>4D Gaussian Splatting</h1>
+                    <div class="vid-cont2">
+                        <video src="/future/arGsplat.mp4" muted autoplay loop></video>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+
+        <div class="current-limit">
+            <h1>Current Limitations</h1>
+            <div class="limit-cont">
+                <div class="div1"><p>Shiny/reflective surfaces still tricky and not properly rendered.</p></div>
+                <div class="div2"><p>Very big scenes need compression and more computation GPU.</p></div>
+                <div class="div3"><p>Editing not fully real-time yet and more complex for beginner.</p></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="first">
+                <p>Tools You Can Use</p>
+                <span><a href="https://colmap.github.io/">COLMAP</a></span>
+                <span><a href="https://poly.cam/tools/gaussian-splatting">Polycam</a></span>
+                <span><a href="https://lumalabs.ai/interactive-scenes">Luma AI</a></span>
+                <span><a href="https://github.com/huggingface/gsplat.js">gsplat.js</a></span>
+                <span><a href="https://www.kiriengine.app/features/3d-gaussian-splatting">Kiri Engine</a></span>
+                <span><a href="https://huggingface.co/blog/gaussian-splatting">Hugging Face</a></span>
+            </div>
+            <div class="second">
+                <p>Tech Used</p>
+                <span>html/css/js</span>
+                <span>gsap/lenis</span>
+                <span>three.js/webgl</span>
+                <span>blender/blind</span>
+                <span>Hugging Face/gsplat.js</span>
+            </div>
+            <div class="third">
+                <p>references & founders</p>
+                <span><a href="https://github.com/graphdeco-inria/gaussian-splatting">Github</a></span>
+                <span><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">Research</a></span>
+                <span>Bernhard Kerbl</span>
+                <span>George Drettakis</span>
+                <span>Georgios Kopanas</span>
+                <span>Thomas Leimkühler</span>
+
+            </div>
+            <div class="forth">
+                <p>website socials</p>
+                <span><a href="">twitter</a></span>
+                <span><a href="https://x.com/poltuharshit14">twitter</a></span>
+                <span><a href="https://github.com/tvnisxq">Github</a></span>
+                <span><a href="https://github.com/HarshitKumarSahu">Github</a></span>
+                <span><a href="">linkedin</a></span>
+                <span><a href="https://www.linkedin.com/in/harshitkumarsahu-14082004aug/">linkedin</a></span>
+            </div>
+        </footer>
         <div data-color-type="2" class="gradient-canvas"></div>
     </div>
 
     <script type="module" src="../main.js"></script>
     <script type="module" src="../camera.js"></script>
+    <script type="module" src="../ellips.js"></script>
+    <script type="module" src="../semiHand.js"></script>
+    <script type="module" src="../handGsplat.js"></script>
+    <script type="module" src="../animation.js"></script>
 </body>
 </html>

@@ -378,7 +378,13 @@ progress::-moz-progress-bar {
     margin-top: calc(var(--oneBlock) * 0.375);
     padding-left: calc(var(--oneBlock) * 0.375);
     border-left: calc(var(--oneBlock) * 0.0575) solid black;
-
+}
+.work-headding {
+    font-family: anton;
+    margin-top: calc(var(--oneBlock) * 2);
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
 }
 
 
@@ -415,6 +421,7 @@ progress::-moz-progress-bar {
     top: 0;
     left: 0;
     border-bottom: calc(var(--oneBlock) * 0.0575) solid black;
+    border-top: calc(var(--oneBlock) * 0.0575) solid black;
 }
 .first span {
     font-size: calc(var(--oneBlock) * 5);
@@ -629,9 +636,431 @@ progress::-moz-progress-bar {
 }
 
 
-/* .work-page .first span, .work-page .first p, .work-page .first h1 {
+
+.fifth {
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    border-bottom: calc(var(--oneBlock) * 0.0575) solid black;
+    position: relative;
+}
+.work-page .fifth #semi-hand {
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+.fifth span {
+    font-size: calc(var(--oneBlock) * 5);
+    line-height: 1;
+    font-family: anton;
+}
+.fifth .box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: calc(var(--oneBlock) * 1.75);
+}
+.fifth .box .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--oneBlock) * 0.5);
+}
+.fifth .box .top h1 {
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: anton;
+}
+.fifth .bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    gap: calc(var(--oneBlock) * 0.25);
+}
+.fifth .box p {
+    font-family: open;
+    font-size: calc(var(--oneBlock) * 0.7);
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.gui {
+    background-color: transparent;
+    border: calc(var(--oneBlock) * 0.025) solid #111;
+    padding: calc(var(--oneBlock) * 0.25) calc(var(--oneBlock) * 0.5);
+    color: #111;
+    font-family: anton;
+    z-index: 100;
+    user-select: none;
+  }
+.gui label { 
+    font-size: calc(var(--oneBlock) * 0.75) ;
+}
+.gui #particleCount { 
+    width: 100%; 
+}
+.gui #count { 
+    font-weight: bold; 
+    color: #111; 
+    display: inline-block; 
+    font-size: calc(var(--oneBlock) * 0.75) ;
+}
+#particleCount {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.275);
+    /* border-radius: 10px; */
+    /* outline: none; */
+    /* margin-left: 15px; */
+    cursor: pointer;
+    /* box-shadow: inset 0 2px 8px rgba(0,0,0,0.4); */
+}
+#particleCount::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000000;           /* ← pure black */       /* white ring so it pops */
+  cursor: pointer;
+}
+
+
+
+
+.work-page .sixth {
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    border-bottom: calc(var(--oneBlock) * 0.0575) solid black;
+    position: relative;
+}
+.work-page .sixth .hand-wrapper {
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: transparent;
+    /* background-color: ; */
+}
+#gsplat-hand {
+    width: 100%;
+    height: calc(100vh - calc(var(--oneBlock) * 0.750));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* background-color: rgba(6, 6, 177, 0.195); */
+}
+.sixth span {
+    font-size: calc(var(--oneBlock) * 5);
+    line-height: 1;
+    font-family: anton;
+    z-index: 4;
     color: #f8f8f8;
-} */
+}
+.sixth .box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: calc(var(--oneBlock) * 1.75);
+}
+.sixth .box .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--oneBlock) * 0.5);
+}
+.sixth .box .top h1 {
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: anton;
+    z-index: 4;
+    color: #f8f8f8;
+}
+.sixth .box p {
+    font-family: open;
+    font-size: calc(var(--oneBlock) * 0.7);
+    font-weight: 200;
+    text-transform: capitalize;
+    width: 30%;
+    z-index: 4;
+    color: #f8f8f8;
+}
+.sixth .control {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 50%;
+}
+.sixth .control div {
+    height: calc(var(--oneBlock) * 2.5);
+    margin-bottom: calc(var(--oneBlock) * 1);
+    margin-left: calc(var(--oneBlock) * 0.25);
+}
+
+.difference {
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(var(--oneBlock) * 0.75) calc(var(--oneBlock) * 0.375);
+}
+.difference h1 {
+    font-family: anton;
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: calc(var(--oneBlock) * 0.75);
+}
+.difference .vidd {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.difference .vidd h1 {
+    font-family: open;
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 0.75);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 0;
+}
+.difference .vidd .middle {
+    font-size: calc(var(--oneBlock) * 0.7);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: calc(var(--oneBlock) * 0.375);
+    padding-left: calc(var(--oneBlock) * 0.375);
+    padding-right: calc(var(--oneBlock) * 0.375);
+    border-left: calc(var(--oneBlock) * 0.0575) solid black;
+    border-right: calc(var(--oneBlock) * 0.0575) solid black;
+    font-family: open;
+}
+
+.future {
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(var(--oneBlock) * 0.75) calc(var(--oneBlock) * 0.375);
+}
+.future h1 {
+    font-family: anton;
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: calc(var(--oneBlock) * 0.75);
+}
+.future .parent p {
+    padding: calc(var(--oneBlock) * 0.375);
+    border: calc(var(--oneBlock) * 0.0575) solid black;
+    text-align: center;
+    font-size: calc(var(--oneBlock) * 1);
+    font-family: anton;
+    text-transform: uppercase;
+}
+.future .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+}
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: center;
+}
+.div1 p {
+    background-color: #000;
+    color: #f8f8f8;
+}
+.div2 { 
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center; 
+}
+.div3 {
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: center;  
+}
+.div3 p {
+    background-color: #000;
+    color: #f8f8f8;
+}
+.div4 { 
+    grid-area: 4 / 4 / 5 / 5; 
+    text-align: center; 
+}
+.div5 { 
+    grid-area: 5 / 5 / 6 / 6; 
+    text-align: center; 
+}
+.div5 p {
+    background-color: #000;
+    color: #f8f8f8;
+}
+
+
+.future-update {
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(var(--oneBlock) * 0.75) calc(var(--oneBlock) * 0.375);
+}
+.future-update h1 {
+    font-family: anton;
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: calc(var(--oneBlock) * 0.75);
+}
+.future-update .top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: calc(var(--oneBlock) * 0.7) ;
+}
+.future-update .top p {
+    font-family: open;
+    font-size: calc(var(--oneBlock) * 0.7);
+    font-weight: 200;
+    text-transform: capitalize;
+    width: 30%;
+    z-index: 4;
+    color: #111;
+}
+
+
+
+
+.current-limit {
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(var(--oneBlock) * 0.75) calc(var(--oneBlock) * 0.375);
+}
+.current-limit h1 {
+    font-family: anton;
+    text-transform: uppercase;
+    font-size: calc(var(--oneBlock) * 1.5);
+    line-height: 1;
+    text-align: left;
+    margin-bottom: calc(var(--oneBlock) * 0.75);
+}
+.limit-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.current-limit .div1 p, .current-limit .div3 p {
+    color: #111;
+    background-color: transparent;
+}
+.current-limit .div2 p {
+    color: #f8f8f8;
+    background-color: black;
+}
+.current-limit p {
+    font-family: open;
+    font-size: calc(var(--oneBlock) * 0.7);
+    font-weight: 200;
+    text-transform: capitalize;
+    /* width: 30%; */
+    z-index: 4;
+    color: #111;
+    text-align: center;    
+    padding: calc(var(--oneBlock) * 0.375);
+    border: calc(var(--oneBlock) * 0.0575) solid black;
+}
+.current-limit p:nth-child(2) {
+    color: #f8f8f8;
+    background-color: #111;
+}
+
+
+footer {
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: calc(var(--oneBlock) * 0.75) calc(var(--oneBlock) * 0.375);
+    border-top: calc(var(--oneBlock) * 0.0575) solid black;
+}
+footer p {
+    font-family: anton;
+    font-size: calc(var(--oneBlock) * 0.7);
+    font-weight: 200;
+    text-transform: capitalize;
+    /* width: 30%; */
+    z-index: 4;
+    color: #111;
+    text-align: center;    
+
+}
+footer .first, footer .second, footer .third, footer .forth {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+footer .first span, footer .third span, footer .second span, footer .forth span {
+    font-size: calc(var(--oneBlock) * 0.475);
+    font-family: anton;
+    line-height: 1;
+}
 
 
 
