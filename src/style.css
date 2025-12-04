@@ -1,11 +1,11 @@
 /* custom */
 @font-face {
     font-family: anton;
-    src: url("../public/Anton-Regular.ttf");
+    src: url("/Anton-Regular.ttf");
 }
 @font-face {
     font-family: open;
-    src: url("../public/OpenSans-Regular.ttf");
+    src: url("/OpenSans-Regular.ttf");
 }
 
 /* Reset */
