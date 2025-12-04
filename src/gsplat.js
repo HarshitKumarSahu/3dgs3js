@@ -14,8 +14,8 @@ let currentScene = null;
 
 // List of your splats (add as many as you want)
 const splatList = [
-    { name: "Splat 1: Kotawani",     url: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat" },
-    { name: "Splat 2: Neema Sir",        url: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat" },
+    { name: "Splat 1: Kotwani",     url: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat" },
+    { name: "Splat 2: Nitesh Sir",        url: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat" },
     { name: "Splat 3: Shubhi Maam",    url: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.splat" },
     { name: "Splat 4: Kamesh Sir",              url: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.splat" },
     { name: "Splat 5: Statue",  url: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.splat" },
