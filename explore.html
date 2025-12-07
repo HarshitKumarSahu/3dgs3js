@@ -9,10 +9,9 @@
 </head>
 <body>
 
-    <!-- home page -->
+    <!-- explore page -->
     <div id="explore">
         <nav>
-            <!-- <a href="#">3DGS3JS</a> -->
             <a href="">3D Gaussian Splatting</a>
             <div class="nav-options">
                 <a href="./index.html">home</a>    
@@ -27,7 +26,6 @@
                 Splatting
             </h1>
             <div class="right">
-                <!-- <p>The Future of Real-Time 3D Reality Capturing</p> -->
                 <p>A revolutionary way to capture and render real-world 3D scenes at hundreds of FPS using millions of tiny glowing 3D Gaussians instead of polygons or neural meshes.</p>
                 <p>
                     <span>No meshes</span>
@@ -39,8 +37,6 @@
 
         <div class="what-page">
             <div class="left">
-                <!-- <h1>what is 3D Gaussian Splatting</h1> -->
-                <!-- <p>Gaussian Splatting is extended class of NeRF (Neural Radiance Field), or a rasterization technique that allows real-time rendering of photorealistic scenes learned from small samples of images. That means: Have data describing the scene. Draw the data on the screen.</p> -->
                 <p>
                     Gaussian Splatting is the evolution of NeRF (Neural Radiance Field): same photorealistic quality from a few photos, but rendered in real-time by directly splatting millions of 3D Gaussians onto the screen. 
                     <br> 
@@ -58,7 +54,6 @@
             </div>
             <div class="right">
                 <div class="vid-cont">
-                    <!-- <video src="/homeSplat3.mp4" loop autoplay muted></video> -->
                     <video src="/difference/gsplatHand.mp4" loop autoplay muted></video>
                 </div>
                 <p>Sample 3D Gaussian Splatting cloud formation</p>      
@@ -171,7 +166,7 @@
                     <div class="bottom">
                         <p>So as time passed, model constantly update Gaussians(positions, alpha, rotation, size), we see it forming clouds, at start it seems like points</p>
                         <div class="gui">
-                            <label for="particleCount">Particles: <span id="count">10000</span></label>
+                            <label for="particleCount">Gaussians: <span id="count">10000</span></label>
                             <input type="range" id="particleCount" min="100" max="20000" step="100" value="10000">
                         </div>
                     </div>
@@ -274,20 +269,12 @@
 
         <div class="future-update">
             <h1>Future updates: 4D Gaussian Splatting</h1>
-            <!-- <div class="ftu"> -->
                 <div class="top">
                     <p>3D GS + Time = Millions of "deformable" Gaussians that move and change shape over time.</p>
                     <div class="vid-cont2">
                         <video src="/future/4dgsplat.mp4" muted autoplay loop></video>
                     </div>
                 </div>
-                <!-- <div class="bottom">
-                    <h1>4D Gaussian Splatting</h1>
-                    <div class="vid-cont2">
-                        <video src="/future/arGsplat.mp4" muted autoplay loop></video>
-                    </div>
-                </div> -->
-            <!-- </div> -->
         </div>
 
         <div class="current-limit">
