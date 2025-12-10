@@ -259,7 +259,16 @@ progress::-moz-progress-bar {
     background: #111111;
     color: #f8f8f8;
 } 
-
+#gsplat .videos {
+    width: calc(var(--oneBlock) * 5);
+    height: calc(var(--oneBlock) * 6.5);
+    right: calc(var(--oneBlock) * 0.375);
+    bottom: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    z-index: 5;
+    /* background-color: aquamarine; */
+}
 
 
 
