@@ -22,7 +22,7 @@ Live Demo: [https://3dgs3js.vercel.app/](https://3dgs3js.vercel.app/)
 
 | Scene | Name |
 |-------------------------------------------------------------|----------------------------|
-| ![Kotwani](./public/preview/1.jpg)                             | **Splat 1: Kotwani Sir**
+| ![Kotwani](./public/preview/1.jpg)                             | **Splat 1: Kotwani**
 | ![Nitesh Sir](./public/preview/2.jpg)                         | **Splat 2: Nitesh Sir**
 | ![Shubhi Ma'am](./public/preview/3.jpg)                     | **Splat 3: Shubhi Ma'am**
 | ![Kamesh Sir](./public/preview/4.jpg)                        | **Splat 4: Kamesh Sir**
