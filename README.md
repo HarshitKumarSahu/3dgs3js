@@ -1,6 +1,6 @@
 # 3D Gaussian Splatting – Interactive Web Experience
 
-![Preview](./public/preview/home.png)
+![Preview](./public/preview/home.jpg)
 
 A stunning, high-performance web showcase of **3D Gaussian Splatting (3DGS)** built with **gsplat.js**, **Three.js**, **GSAP**, and **Lenis**. This project demonstrates real-time photorealistic 3D scene rendering directly in the browser — no meshes, no NeRF waiting times — just millions of glowing 3D Gaussians rendered at 120+ FPS.
 
@@ -22,12 +22,12 @@ Live Demo: [https://3dgs3js.vercel.app/](https://3dgs3js.vercel.app/)
 
 | Scene | Name |
 |-------------------------------------------------------------|----------------------------|
-| ![Kotwani](./public/preview/1.png)                             | **Splat 1: Kotwani Sir**
-| ![Nitesh Sir](./public/preview/2.png)                         | **Splat 2: Nitesh Sir**
-| ![Shubhi Ma'am](./public/preview/3.png)                     | **Splat 3: Shubhi Ma'am**
-| ![Kamesh Sir](./public/preview/4.png)                        | **Splat 4: Kamesh Sir**
-| ![Statue](./public/preview/5.png)                               | **Splat 5: Ancient Statue**
-| ![LCIT Campus](./public/preview/6.png)                            | **Splat 6: LCIT Campus (Large Scene)**
+| ![Kotwani](./public/preview/1.jpg)                             | **Splat 1: Kotwani Sir**
+| ![Nitesh Sir](./public/preview/2.jpg)                         | **Splat 2: Nitesh Sir**
+| ![Shubhi Ma'am](./public/preview/3.jpg)                     | **Splat 3: Shubhi Ma'am**
+| ![Kamesh Sir](./public/preview/4.jpg)                        | **Splat 4: Kamesh Sir**
+| ![Statue](./public/preview/5.jpg)                               | **Splat 5: Ancient Statue**
+| ![LCIT Campus](./public/preview/6.jpg)                            | **Splat 6: LCIT Campus (Large Scene)**
 
 > All Gaussian splats trained from short 360° videos using tools like Luma AI / Polycam.
 
