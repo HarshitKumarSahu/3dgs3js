@@ -207,38 +207,71 @@ let currentScene = null;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 1. Define splat + video pairs (add/edit video paths as needed)
+// const splatVideoMap =  [
+//         { 
+//             name: "Splat 1: Kotwani",      
+//             splat: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat", // fixed: same base as others
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kotwani.mp4" 
+//         },                     
+//         { 
+//             name: "Splat 2: Nitesh Sir",   
+//             splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat",
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.mp4" 
+//         },
+//         { 
+//             name: "Splat 3: Shubhi Maam",  
+//             splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.splat",
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.mp4" 
+//         },
+//         { 
+//             name: "Splat 4: Kamesh Sir",   
+//             splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.splat",
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.mp4" 
+//         },
+//         { 
+//             name: "Splat 5: Statue",       
+//             splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.splat",
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.mp4" 
+//         },
+//         { 
+//             name: "Splat 6: LCIT Campus",  
+//             splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.splat",
+//             video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.mp4" 
+//         }
+// ];
+
 const splatVideoMap =  [
-        { 
-            name: "Splat 1: Kotwani",      
-            splat: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat", // fixed: same base as others
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kotwani.mp4" 
-        },                     
-        { 
-            name: "Splat 2: Nitesh Sir",   
-            splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat",
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.mp4" 
-        },
-        { 
-            name: "Splat 3: Shubhi Maam",  
-            splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.splat",
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.mp4" 
-        },
-        { 
-            name: "Splat 4: Kamesh Sir",   
-            splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.splat",
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.mp4" 
-        },
-        { 
-            name: "Splat 5: Statue",       
-            splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.splat",
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.mp4" 
-        },
-        { 
-            name: "Splat 6: LCIT Campus",  
-            splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.splat",
-            video: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.mp4" 
-        }
-    ];
+    { 
+        name: "Splat 1: Kotwani",      
+        splat: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.splat", // fixed: same base as others
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kotawani.mp4" 
+    },                     
+    { 
+        name: "Splat 2: Nitesh Sir",   
+        splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/neemasir.splat",
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/neema.mp4" 
+    },
+    { 
+        name: "Splat 3: Shubhi Maam",  
+        splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/shubhimaam.splat",
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/shubhi.mp4" 
+    },
+    { 
+        name: "Splat 4: Kamesh Sir",   
+        splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/kameshsir.splat",
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/kamesh.mp4" 
+    },
+    { 
+        name: "Splat 5: Statue",       
+        splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/statue.splat",
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/stachu.mp4" 
+    },
+    { 
+        name: "Splat 6: LCIT Campus",  
+        splat: "https://huggingface.co/datasets/poltu14/3dgsplat/resolve/main/lcit.splat",
+        video: "https://huggingface.co/datasets/poltu14/3dgs/resolve/main/lcit.mp4?download=true" 
+    }
+];
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 2. Preload all splats + videos (shows one progress bar)
